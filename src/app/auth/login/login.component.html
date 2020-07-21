@@ -1,0 +1,19 @@
+<div id="formContent">
+  <!-- Tabs Titles -->
+
+  <!-- Icon -->
+  <div class="fadeIn first">
+    <h3>Login</h3>
+  </div>
+
+  <!-- Login Form -->
+  <form [formGroup]="loginForm">
+    <input type="email" formControlName="Email" id="Email" class="fadeIn second" placeholder="Email">
+    <input type="password" formControlName="Password" id="password" class="fadeIn third" placeholder="password">
+    <input type="button" (click)="userLogin()" class="fadeIn fourth" value="Login">
+  </form>
+  <div id="formFooter">
+    <a class="underlineHover" routerLink='/auth/register'>To Sign Up click here</a>
+  </div>
+
+</div>

@@ -1,0 +1,20 @@
+<div id="formContent">
+  <!-- Tabs Titles -->
+
+  <!-- Icon -->
+  <div class="fadeIn first">
+    <h3>Register</h3>
+  </div>
+
+  <!-- Login Form -->
+  <form [formGroup]="registerForm">
+    <input type="text" formControlName="First_Name" id="First Name" class="fadeIn second" placeholder="First Name">
+    <input type="text" formControlName="Last_Name" id="Last Name" class="fadeIn second" placeholder="Last Name">
+    <input type="email" formControlName="Email" id="Email" class="fadeIn second" placeholder="Email">
+    <input type="password" formControlName="Password" id="password" class="fadeIn third" placeholder="password">
+    <input type="button" (click)="userRegister()" class="fadeIn fourth" value="Register">
+  </form>
+  <div id="formFooter">
+    <a class="underlineHover" routerLink='/auth/login'>Already Member click here</a>
+  </div>
+</div>

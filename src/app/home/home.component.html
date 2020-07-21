@@ -1,0 +1,40 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand">With Passport</a>
+  <form class="form-inline">
+    <button class="btn btn-outline-success my-2 my-sm-0" (click)="logOut()" type="submit">Logot</button>
+  </form>
+</nav>
+<div class="wrapper bg">
+  <div class="fadeInDown tableStyle">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <h3>Users</h3>
+      </div>
+
+      <!-- Login Form -->
+      <form>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of users; let i = index">
+              <th scope="row">{{i}}</th>
+              <td>{{user.First_Name}}</td>
+              <td>{{user.Last_Name}}</td>
+              <td>{{user.Email}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </div>
+</div>
